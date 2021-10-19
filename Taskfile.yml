@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - docker build -t my-rust-app .
+  run:
+    cmds:
+      - docker run -it --user root --rm --name my-running-app my-rust-app
